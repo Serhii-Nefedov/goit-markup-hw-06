@@ -78,12 +78,65 @@
       <!--Modal-Window-->
 
       <div class="backdrop is-hidden" data-modal>
+
         <div class="modal">
+          
           <button class="modal-close" data-modal-close>
             <svg class="close-icon">
-              <use href="./images/icon/symbol-defs-1.svg#modal-close-comp"></use>
+              <use
+                href="./images/icon/symbol-defs-1.svg#modal-close-comp"
+              ></use>
             </svg>
           </button>
+          <div class="input-place">
+          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+
+          <form class="form-modal">
+
+            <p class="form-field">
+              <label for="name" class="form-label">Имя</label>
+              <input class="form-input" type="text" name="user-name" id="name" />
+            </p>
+
+        
+            <p class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input class="form-input" type="tel" name="user-tel" id="tel" />
+          </p>
+
+        
+            <p class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <input class="form-input" type="email" name="user-mail" id="mail" />
+          </p>
+
+        
+            <p class="form-field">
+            <label for="comments" class="form-label">Комментарий</label>
+            <textarea
+              name="comments"
+              id="comments"
+              placeholder="Введите текст"
+            ></textarea>
+          </p>
+
+        
+          <div class="form-polic">
+            <input class="form-checkbox" type="checkbox" name="agreement" id="agreement" />
+            <label for="agreement" class="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a></label
+            >
+          </div>
+
+           
+            <div class="button-position">
+              <button class="submit-button" type="submit"><span class="submit-title">Отправить</span></button>
+            </div>
+          </div>
+          </form>
+
+          
         </div>
       </div>
 
