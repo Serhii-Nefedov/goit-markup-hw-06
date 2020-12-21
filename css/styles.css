@@ -332,14 +332,14 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   /* border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .modal-close:hover,
 .modal-close:focus {
   color: var(--accent-color);
-  border-color: var(--accent-color);
+/*  border-color: var(--accent-color);*/
 }
 
 .close-icon {
@@ -392,8 +392,6 @@ ul {
 }
 
 .form-label {
-
-  text-align: center;
   padding-bottom: 4px;
 
   font-style: normal;
