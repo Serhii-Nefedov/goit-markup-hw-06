@@ -96,7 +96,7 @@
             <p class="form-field">
               <label for="name" class="form-label">Имя</label>
               <input class="form-input" type="text" name="user-name" id="name" />
-              <span>
+              <span class="input-picture">
                 <svg class="input-icon">
                   <use href="./images/icon/symbol-defs-modal.svg#name"></use>
                 </svg>
@@ -107,12 +107,22 @@
             <p class="form-field">
             <label for="tel" class="form-label">Телефон</label>
             <input class="form-input" type="tel" name="user-tel" id="tel" />
+            <span class="input-picture">
+              <svg class="input-icon">
+                <use href="./images/icon/symbol-defs-modal.svg#tel"></use>
+              </svg>
+            </span>
           </p>
 
         
             <p class="form-field">
             <label for="mail" class="form-label">Почта</label>
             <input class="form-input" type="email" name="user-mail" id="mail" />
+            <span class="input-picture">
+              <svg class="input-icon">
+                <use href="./images/icon/symbol-defs-modal.svg#mail"></use>
+              </svg>
+            </span>
           </p>
 
         
@@ -128,9 +138,18 @@
         
           <div class="form-polic">
             <input class="form-checkbox" type="checkbox" name="agreement" id="agreement" />
-            <label for="agreement" class="agreement"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></label
+           
+            <label class="check-label" for="agreement">
+              <span class="check-decoration">
+              <svg class="check-box-icon">
+                <use href="./images/icon/symbol-defs-modal.svg#icon-check-auto"></use>
+              </svg>
+            </span>
+            <span class="check-label-subtitle">
+              Соглашаюсь с рассылкой и принимаю
+            </span>
+              <a class="label-subtitle-link" href=""><span class="check-label-subtitle-text">Условия договора</span></a>
+              </label
             >
           </div>
 
