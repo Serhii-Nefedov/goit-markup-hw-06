@@ -78,9 +78,7 @@
       <!--Modal-Window-->
 
       <div class="backdrop is-hidden" data-modal>
-
         <div class="modal">
-          
           <button class="modal-close" data-modal-close>
             <svg class="close-icon">
               <use
@@ -88,76 +86,84 @@
               ></use>
             </svg>
           </button>
+
           <div class="input-place">
-          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
-          <form class="form-modal">
+            <form class="form-modal">
+              <p class="form-field">
+                <label for="name" class="form-label">Имя</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  id="name"
+                />
+                <span class="input-picture">
+                  <svg class="input-icon">
+                    <use href="./images/icon/symbol-defs-modal.svg#name"></use>
+                  </svg>
+                </span>
+              </p>
 
-            <p class="form-field">
-              <label for="name" class="form-label">Имя</label>
-              <input class="form-input" type="text" name="user-name" id="name" />
-              <span class="input-picture">
-                <svg class="input-icon">
-                  <use href="./images/icon/symbol-defs-modal.svg#name"></use>
-                </svg>
-              </span>
-            </p>
+              <p class="form-field">
+                <label for="tel" class="form-label">Телефон</label>
+                <input class="form-input" type="tel" name="user-tel" id="tel" />
+                <span class="input-picture">
+                  <svg class="input-icon">
+                    <use href="./images/icon/symbol-defs-modal.svg#tel"></use>
+                  </svg>
+                </span>
+              </p>
 
-        
-            <p class="form-field">
-            <label for="tel" class="form-label">Телефон</label>
-            <input class="form-input" type="tel" name="user-tel" id="tel" />
-            <span class="input-picture">
-              <svg class="input-icon">
-                <use href="./images/icon/symbol-defs-modal.svg#tel"></use>
-              </svg>
-            </span>
-          </p>
+              <p class="form-field">
+                <label for="mail" class="form-label">Почта</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  name="user-mail"
+                  id="mail"
+                />
+                <span class="input-picture">
+                  <svg class="input-icon">
+                    <use href="./images/icon/symbol-defs-modal.svg#mail"></use>
+                  </svg>
+                </span>
+              </p>
 
-        
-            <p class="form-field">
-            <label for="mail" class="form-label">Почта</label>
-            <input class="form-input" type="email" name="user-mail" id="mail" />
-            <span class="input-picture">
-              <svg class="input-icon">
-                <use href="./images/icon/symbol-defs-modal.svg#mail"></use>
-              </svg>
-            </span>
-          </p>
+              <p class="form-field">
+                <label for="comments" class="form-label">Комментарий</label>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  placeholder="Введите текст"
+                ></textarea>
+              </p>
 
-        
-            <p class="form-field">
-            <label for="comments" class="form-label">Комментарий</label>
-            <textarea
-              name="comments"
-              id="comments"
-              placeholder="Введите текст"
-            ></textarea>
-          </p>
+              <div class="form-polic">
+                <label class="check-label">
+                  <input
+                    class="form-checkbox"
+                    type="checkbox"
+                    name="agreement"
+                  />
+                  <span class="check-decoration"></span>
+                  <span class="check-label-subtitle"
+                    >Соглашаюсь с рассылкой и принимаю</span
+                  >
+                  <a class="label-subtitle-link" href=""
+                    ><span class="check-label-subtitle-text"
+                      >Условия договора</span
+                    ></a
+                  >
+                </label>
+              </div>
 
-        
-          <div class="form-polic">
-            <input class="form-checkbox" type="checkbox" name="agreement" id="agreement" />
-           <span class="check-decoration">
-              <svg class="check-box-icon">
-                <use href="./images/icon/symbol-defs-modal.svg#icon-check-auto"></use>
-              </svg>
-            </span>
-            
-            <label class="check-label" for="agreement">
-              <span class="check-label-subtitle">
-              Соглашаюсь с рассылкой и принимаю
-            </span>
-              <a class="label-subtitle-link" href=""><span class="check-label-subtitle-text">Условия договора</span></a>
-              </label
-            >
+              <button class="submit-button" type="submit">
+                <span class="submit-title">Отправить</span>
+              </button>
+            </form>
           </div>
-
-              <button class="submit-button" type="submit"><span class="submit-title">Отправить</span></button>
-            </div>
-          </form>
-
-          
         </div>
       </div>
 
@@ -554,25 +560,31 @@
           </ul>
         </div>
 
-      <!--Form-footer-->
+        <!--Form-footer-->
 
-      <div class="form-container">
-        <b class="footer-form-title">Подпишитесь на рассылку</b>
-      <form class="footer-form">
-        <div class="form-field">
-  
-  <input class="form-input" type="email" name="user-mail" id="mail" />
-  <label for="mail"  class="form-label">E-mail</label>
-</div>
+        <div class="form-container">
+          <b class="footer-form-title">Подпишитесь на рассылку</b>
+          <form class="footer-form">
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                name="user-mail"
+                id="mail"
+              />
+              <label for="mail" class="form-label">E-mail</label>
+            </div>
 
-<button type="submit" class="btn-footer-form">Подписаться
-  <svg class="footer-send-icon">
-    <use href="./images/icon/symbol-defs-modal.svg#footer-send"></use>
-  </svg>
-</button>
-      </form>
-    </div>
-
+            <button type="submit" class="btn-footer-form">
+              Подписаться
+              <svg class="footer-send-icon">
+                <use
+                  href="./images/icon/symbol-defs-modal.svg#footer-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
